@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS predictions (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    input_data TEXT NOT NULL,
+    prediction TEXT NOT NULL,
+    confidence REAL NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
