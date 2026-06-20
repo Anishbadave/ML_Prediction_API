@@ -1,0 +1,21 @@
+POST /predict
+
+curl -X POST "http://127.0.0.1:8000/predict" ^
+-H "Content-Type: application/json" ^
+-d "{\"feature1\":5.1,\"feature2\":3.5,\"feature3\":1.4,\"feature4\":0.2}"
+
+GET /health
+
+curl http://127.0.0.1:8000/health
+
+GET /predictions
+
+curl http://127.0.0.1:8000/predictions
+
+GET /average-confidence
+
+curl http://127.0.0.1:8000/average-confidence
+
+GET /stats
+
+curl http://127.0.0.1:8000/stats
